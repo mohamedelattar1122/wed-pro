@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link" id="homeLink" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" class="nav-link" id="skillsLink" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" class="nav-link" id="projectsLink" onclick="showSection('projects')">My Projects</a></li>
+            <li><a href="#" class="nav-link" id="contactLink" onclick="showSection('contact')">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم Home مع صورة التعريف والبيانات -->
+    <section id="home" class="section-content">
+        <div class="profile-container">
+            <img src="images/web2.jpg" alt="Mohamed Ahmed El-Attar" class="profile-image">
+            <h1>Hi, I’m Mohamed Ahmed El-Attar. I’m passionate about technology and continuous learning, always seeking to expand my skills and knowledge. Currently studying Electronic Control Engineering at Menoufia University, I have a strong foundation in electronics and a keen interest in web design and project management.</h1>
+            <p>In this portfolio, you’ll find an overview of my projects and achievements, demonstrating my ability to tackle challenges and deliver creative solutions. I strive to innovate and apply my skills to make a positive impact in the field of technology.</p>
+            <p>Feel free to explore my work, and let’s connect!</p>
+        </div>
+    </section>
+
+    <!-- قسم Skills -->
+    <section id="skills" class="section-content" style="display: none;">
+        <h2>Technical Skills:</h2>
+        <ul>
+            <li>Proficient in Microsoft Office (Word, Excel, PowerPoint).</li>
+            <li>Skilled in using AutoCAD and SolidWorks for technical design.</li>
+            <li>Strong general computer skills, including troubleshooting and system management.</li>
+        </ul>
+
+        <h3>Certifications:</h3>
+        <ul>
+            <li>Certified in Project Management by Google.</li>
+        </ul>
+
+        <h3>Professional Abilities:</h3>
+        <ul>
+            <li>Experience working as an Electrician Technician alongside academic studies.</li>
+            <li>Ability to work efficiently under pressure.</li>
+            <li>Problem-solving skills to address technical and operational challenges.</li>
+        </ul>
+
+        <h3>Interpersonal Skills:</h3>
+        <ul>
+            <li>Excellent communication skills for effective collaboration.</li>
+            <li>Strong team player with the ability to contribute to collective goals.</li>
+        </ul>
+    </section>
+
+    <!-- قسم My Projects -->
+    <section id="projects" class="section-content" style="display: none;">
+        <h2>My Projects</h2>
+        <h3>Speaker Circuit Project</h3>
+        <p>Developed a functional speaker circuit during my studies at the Industrial Technical Institute. The project showcased my understanding of electronic components and circuit design.</p>
+
+        <h3>Conveyor Belt System for Products (In Progress)</h3>
+        <p>Currently working on designing and implementing a conveyor belt system for transporting foam products. The project focuses on improving worker safety, efficiency, and productivity at Al-Araby Group. Includes material selection, cost analysis, and innovative engineering solutions.</p>
+    </section>
+
+    <!-- قسم Contact Me -->
+    <section id="contact" class="section-content" style="display: none;">
+        <h2>Contact Me</h2>
+        <p>Email: mhamedalater@gmail.com</p>
+        <p>Phone: 01229355476</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-ahmed-6129b5295" target="_blank">Visit my LinkedIn</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100014254084741" target="_blank">Visit my Facebook</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

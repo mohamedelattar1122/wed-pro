@@ -1,0 +1,181 @@
+/* تنسيق عام للجسم */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #3210c6; /* اللون الأزرق */
+    padding: 15px;
+    text-align: center;
+    overflow: hidden; /* منع التمرير الأفقي */
+    box-sizing: border-box; /* ضمان أن padding لن يتسبب في تجاوز الحجم */
+    padding-left: 10px; /* إضافة مسافة صغيرة للحواف */
+    padding-right: 10px; /* إضافة مسافة صغيرة للحواف */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* استخدام Flexbox */
+    flex-wrap: nowrap; /* منع الأزرار من الانتقال إلى السطر التالي */
+    justify-content: center; /* توسيط الأزرار */
+    box-sizing: border-box;
+}
+
+nav ul li {
+    margin: 10px; /* إضفاء مسافة بين الأزرار */
+    flex: 1 1 auto; /* الأزرار ستأخذ العرض المناسب حسب المحتوى */
+    text-align: center;
+    flex-shrink: 0; /* منع الأزرار من الانكماش */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    white-space: nowrap; /* منع النص من التكسير في الأسطر */
+    box-sizing: border-box; /* التأكد من أن padding والـ margin لا يتسببان في تجاوز العرض */
+}
+
+/* تأثير التمرير */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* تمييز الزر النشط */
+nav a.active {
+    background-color: #574bff; /* اللون الذي يظهر عند النقر على الزر */
+    border-radius: 10px;
+}
+
+/* خلفيات مميزة لكل زر */
+#homeLink {
+    background-image: url('"D:\html5\web2.jpg"');
+    background-size: cover;
+    background-position: center;
+}
+
+#skillsLink {
+    background-image: url('images/skills-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#projectsLink {
+    background-image: url('D:\html5\web2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#contactLink {
+    background-image: url('images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 10px; /* إضافة مسافة حول الزر */
+}
+
+/* تنسيق الأقسام */
+.section-content {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* قسم Home */
+#home {
+    background-color: #f4f4f4;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* تنسيق العناوين */
+h2 {
+    color: #3210c6; /* اللون الأزرق */
+}
+
+h3 {
+    color: #011114; /* اللون البرتقالي */
+}
+
+/* تصميم قائمة المهارات */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* تحسين تنسيق النصوص داخل الأقسام */
+p {
+    font-size: 16px;
+}
+
+/* تنسيق الروابط */
+a {
+    color: #3210c6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* جعل الخط الذي تحت الصورة في زر Home بنفس الحجم */
+#home .profile-container h1 {
+    font-size: 16px;  /* نفس الحجم المستخدم في باقي النصوص */
+    font-family: Arial, sans-serif; /* تأكيد استخدام نفس الخط */
+}
+
+/* تحسين تنسيق الأزرار للعرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* ترتيب الأزرار في صف واحد */
+        justify-content: space-evenly; /* توزيع الأزرار بالتساوي داخل المستطيل الأزرق */
+        align-items: center; /* توسيط الأزرار عموديًا */
+        flex-wrap: nowrap; /* منع الأزرار من الانتقال إلى السطر التالي */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* تقليل المسافة بين الأزرار */
+        flex: 1 1 auto; /* الأزرار ستأخذ العرض المناسب حسب المحتوى */
+    }
+
+    nav a {
+        padding: 12px 25px; /* زيادة المسافة داخل الأزرار على الأجهزة الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px; /* تصغير حجم الخط للأزرار على الشاشات الصغيرة جدًا */
+    }
+}
